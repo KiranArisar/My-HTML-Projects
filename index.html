@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Student Registration Portal</title>
+    <style>
+        /* Using classes */
+        .container {
+            width: 80%;
+            margin: auto;
+            font-family: Arial, sans-serif;
+        }
+
+        .heading {
+            color: darkblue;
+            text-align: center;
+        }
+
+        .section {
+            background-color: #f2f2f2;
+            padding: 15px;
+            margin: 15px 0;
+        }
+
+        /* Using ID */
+        #main-title {
+            background-color: lightblue;
+            padding: 15px;
+        }
+
+        #submit-btn {
+            background-color: green;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* Styling the table */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: lightblue;
+        }
+
+        input, select, textarea {
+            margin: 5px 0 12px;
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+     <!-- Semantic header -->
+    <header id="main-title">
+        <h1 class="heading">Student Registration Portal</h1>
+        <p>Welcome to our student information system.</p>
+    </header>
+
+    <!-- Semantic navigation -->
+    <nav>
+        <a href="#about">About</a> |
+        <a href="#students">Students</a> |
+        <a href="#registration">Register</a>
+    </nav>
+
+    <main class="container">
+
+        <!-- Section and article tags -->
+        <section id="about" class="section">
+            <h2>About Us</h2>
+
+            <article>
+                <h3>Our Purpose</h3>
+                <p>
+                    This portal helps students register for courses
+                    and view student information.
+                </p>
+            </article>
+        </section>
+
+        <!-- Unordered and ordered lists -->
+        <section class="section">
+            <h2>Available Courses</h2>
+
+            <h3>Course List (Unordered List)</h3>
+            <ul>
+                <li>Data Science</li>
+                <li>Web Development</li>
+                <li>Database Management</li>
+            </ul>
+
+            <h3>Registration Steps (Ordered List)</h3>
+            <ol>
+                <li>Enter your personal information.</li>
+                <li>Select your course.</li>
+                <li>Submit the form.</li>
+            </ol>
+        </section>
+
+        <!-- Table -->
+        <section id="students" class="section">
+            <h2>Student Records</h2>
+
+            <table border="1">
+                <caption>Registered Students</caption>
+
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Course</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>101</td>
+                        <td>Ali</td>
+                        <td>Data Science</td>
+                        <td>ali@example.com</td>
+                    </tr>
+
+                    <tr>
+                        <td>102</td>
+                        <td>Sara</td>
+                        <td>Web Development</td>
+                        <td>sara@example.com</td>
+                    </tr>
+
+                    <tr>
+                        <td>103</td>
+                        <td>Ahmed</td>
+                        <td>Database Management</td>
+                        <td>ahmed@example.com</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Form -->
+        <section id="registration" class="section">
+            <h2>Student Registration Form</h2>
+
+            <form action="#" method="post">
+
+                <!-- Text input -->
+                <label for="fullname">Full Name:</label><br>
+                <input
+                    type="text"
+                    id="fullname"
+                    class="form-input"
+                    name="fullname"
+                    placeholder="Enter your full name"
+                    required
+                ><br>
+
+                <!-- Email input -->
+                <label for="email">Email:</label><br>
+                <input
+                    type="email"
+                    id="email"
+                    class="form-input"
+                    name="email"
+                    placeholder="Enter your email"
+                    required
+                ><br>
+
+                <!-- Password input -->
+                <label for="password">Password:</label><br>
+                <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    required
+                ><br>
+
+                <!-- Number input -->
+                <label for="age">Age:</label><br>
+                <input
+                    type="number"
+                    id="age"
+                    name="age"
+                    min="16"
+                    max="60"
+                ><br>
+
+                <!-- Radio buttons -->
+                <p>Gender:</p>
+
+                <input type="radio" id="male"
+                       name="gender" value="male">
+                <label for="male">Male</label>
+
+                <input type="radio" id="female"
+                       name="gender" value="female">
+                <label for="female">Female</label><br><br>
+
+                <!-- Dropdown -->
+                <label for="course">Select Course:</label><br>
+
+                <select id="course" name="course" required>
+                    <option value="">Choose a course</option>
+                    <option value="ds">Data Science</option>
+                    <option value="web">Web Development</option>
+                    <option value="db">Database Management</option>
+                </select><br>
+
+                <!-- Checkbox -->
+                <input type="checkbox" id="terms"
+                       name="terms" required>
+                <label for="terms">
+                    I agree to the terms and conditions.
+                </label><br><br>
+
+                <!-- Date input -->
+                <label for="date">Registration Date:</label><br>
+                <input type="date" id="date" name="date"><br>
+
+                <!-- Textarea -->
+                <label for="comments">Additional Comments:</label><br>
+                <textarea
+                    id="comments"
+                    name="comments"
+                    rows="4"
+                    cols="35"
+                    placeholder="Write your comments here">
+                </textarea><br>
+
+                <!-- Submit and reset buttons -->
+                <input type="submit" id="submit-btn"
+                       value="Register">
+
+                <input type="reset" value="Clear Form">
+
+            </form>
+        </section>
+
+        <!-- Additional semantic tags -->
+        <aside class="section">
+            <h3>Important Notice</h3>
+            <p>
+                <strong>Note:</strong>
+                Please enter accurate information.
+                <em>All required fields must be completed.</em>
+            </p>
+
+            <p>Registration closes on
+                <time datetime="2026-11-30">November 30, 2026</time>.
+            </p>
+        </aside>
+
+    </main>
+
+    <!-- Semantic footer -->
+    <footer>
+        <p>&copy; 2026 Student Registration Portal.</p>
+        <p>Contact: info@example.com</p>
+    </footer>
+</body>
+</html>
