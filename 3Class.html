@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #Profile {
+         color: blue;
+         border: 2px solid black;
+        }
+        .text_large {
+            font-size: 20px;
+            font-weight: bold;
+        }
+       
+    </style>
+</head>
+<body>
+   
+    <div id="Profile">
+        <p class="text_large">Name: Kiran</p>
+        <p class="text_large">Education:B.E</p>
+        <p class="text_large">Name: Ayesha</p>
+        <p class="text_large">Education:B.E</p>
+
+    </div>
+
+    <h1>Registration Form</h1>
+
+    <form>
+        
+        <label >Full Name:</label>
+        <input type="text" required id="name" name="name" placeholder="Enter your full name">
+        <br><br>
+
+         <label >Last Name:</label>
+        <input type="text" disabled id="lname" name="lname" placeholder="Enter your last name">
+        <br><br>
+
+        <label>Email:</label>
+        <input type="email" readonly id="email" name="email" placeholder="Enter your email">
+        <br><br>
+
+        <label >Password:</label> 
+        <input type="password" id="password" name="password" placeholder="Enter your password">
+        <br><br>
+
+        <label>Languages:</label>
+        <input type="checkbox" id="HTML" name="HTML" value="HTML">
+        <label>HTML</label>
+
+        <input type="checkbox" id="CSS" name="CSS" value="CSS">
+        <label>CSS</label>
+
+        <input type="checkbox" id="JavaScript" name="JavaScript" value="JavaScript">
+        <label>JavaScript</label>
+        <br><br>
+    
+         <label >Gender:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label >Male</label>
+
+        <input type="radio" id="female" name="gender" value="female">
+        <label >Female</label>
+        <br><br>
+
+        <label>Choose a File:</label>
+        <input type="file" id="myfile" name="myfile">
+        <br><br>
+
+        <input type="submit" value="Submit">
+       <input type="reset" value="Reset">
+        <input type="button" value="Click" onclick="alert('Button clicked!')">
+    </form>
+
+</body>
+</html>
