@@ -1,0 +1,18 @@
+h1{
+    background: #363434;
+    padding: 10px;
+
+}
+.container{
+    background: #9a5c5c;
+    width: 80%;
+    margin: auto;
+}
+.highlight{
+    color: #fff;
+    background: #000;
+}
+#unique-paragraph{
+    color: #ee86e5;
+    background: #f47bc0;
+}
