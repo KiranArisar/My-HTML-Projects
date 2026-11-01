@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Card</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 30px;
+            background-color: #f5f5f5;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        
+        }
+        .Pricing-card {
+             width: 350px;
+    height: 450px;
+    padding: 30px;
+    background-color: white;
+    border: 2px solid #999999;
+    border-radius: 15px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+
+        .ribbon {
+            background-color: #ff6b6b;
+            color: white;
+            padding: 5px 10px;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+        h1 {
+            text-align: center;
+            font-size: 32px;
+            margin: 30px;
+        }
+        button {
+            background-color: #ff6b6b;
+            color: #eeeeee;
+            border: 2px solid #ff6b6b;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: auto;
+
+        }
+        button:hover {
+    background-color: orange;
+    color: white;
+}
+    </style>
+</head>
+<body>
+    <div class="Pricing-card">
+        <div class="ribbon">Popular
+        </div>
+        <h1>Pro</h1>
+        <p class="price">29$/mo</p>
+        <button onclick="window.open('https://www.google.com/', '_blank')">Choose</button>
+    </div>
+</body>
+</html>
