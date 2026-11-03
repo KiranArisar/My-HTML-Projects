@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+ .container {
+    display: flex;
+ 
+}
+.item-1 {
+    order: 2;
+    flex-grow: 1;
+    flex-shrink: 2;
+    background-color: lightblue;
+}
+.item-2 {
+    order: 1;
+    flex-grow: 2;
+    flex-shrink: 1;
+    background-color: lightcoral;
+    flex-basis: 200px;
+}
+.item-3 {
+    order: 3;
+    flex-grow: 1;
+    flex-shrink: 1;
+    background-color: lightgreen;
+    flex: 0% 0 0;
+
+}
+        </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item-1">Box A</div>
+        <div class="item-2">Box B</div>
+        <div class="item-3">Box C</div>
+    </div>
+    
+</body>
+</html>
