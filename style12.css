@@ -1,0 +1,40 @@
+.item {
+    padding: 8px;
+    margin: 0;
+    background-color: #eeeeee;
+    border-bottom: 1px solid gray;
+}
+.item:nth-child(1) {
+    color: red;
+}
+.item:nth-child(2) {
+    color: green;
+}
+
+.item:nth-child(3) {
+    color: blue;
+}
+.special {
+    font-weight: bold;
+    color: blue;
+    background-color: lightblue;
+}
+.special + .item {
+    font-weight: bold;
+}
+.special ~ .item {
+    font-style: italic;
+}
+.shop-box > .item {
+    border-bottom: 1px solid gray;
+}
+.item:hover {
+    color: orange;
+}
+.item:active {
+    color: red;
+}
+input:focus {
+    border: 2px solid blue;
+    outline: none;
+}
