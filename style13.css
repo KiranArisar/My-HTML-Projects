@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f3ef;
+    padding: 30px;
+}
+.gallery-container {
+    max-width: 950px;
+    margin: auto;
+    background-color: white;
+    padding: 25px;
+    border-radius: 15px;
+    border: 10px solid #eeeae3;
+}
+.gallery-header {
+    text-align: center;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.gallery-header h1 {
+    color: #333;
+    font-size: 32px;
+    display: inline-block;
+}
+.gallery-header h1::after {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 4px;
+    background-color: #c99b68;
+    margin: 8px auto;
+    border-radius: 5px;
+}
+
+.gallery-header span {
+    color: #c99b68;
+}
+
+.gallery-header p {
+    color: #888;
+    margin-top: 12px;
+}
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+.gallery-card {
+    background: #fafafa;
+    border: 1px solid #ddd;
+    border-radius: 9px;
+    overflow: hidden;
+    position: relative;
+    transition: 0.3s ease;
+}
+.gallery-card:hover {
+    transform: translateY(-6px);
+    border-color: #c99b68;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+.image-box {
+    height: 170px;
+    position: relative;
+    overflow: hidden;
+}
+.image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: 0.4s ease;
+}
+.gallery-card:hover img {
+    transform: scale(1.08);
+    opacity: 0.85;
+}
+.image-tag {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: #c99b68;
+    color: white;
+    padding: 6px 10px;
+    font-size: 11px;
+    border-radius: 20px;
+    z-index: 2;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+}
+.gallery-card:hover .image-tag {
+    opacity: 1;
+    visibility: visible;
+}
+.caption {
+    text-align: center;
+    padding: 13px;
+    color: #80664d;
+    font-size: 14px;
+    font-style: italic;
+}
+.caption span {
+    color: #c99b68;
+}
+footer {
+    text-align: center;
+    margin-top: 30px;
+    color: #888;
+    font-size: 13px;
+    overflow: auto;
+}
+footer p::before {
+    content: "✦ ";
+    color: #c99b68;
+}
+img[alt] {
+    border-bottom: 2px solid #c99b68;
+}
+.gallery-header::before {
+    content: "✦";
+    float: left;
+    color: #c99b68;
+    opacity: 0.5;
+    visibility: hidden;
+}
