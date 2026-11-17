@@ -1,0 +1,10 @@
+let name = "kiran";
+const age = 24;
+let student = true;
+let add = null;
+let city;
+console.log("Name: ",name, "Typeof: ", typeof name);
+console.log("Age: ",age, "Typeof: ", typeof age);
+console.log("Student: ",student, "Typeof: ", typeof student);
+console.log("Address: ",add, "Typeof: ", typeof add);
+console.log("City: ",city, "Typeof: ", typeof city);
