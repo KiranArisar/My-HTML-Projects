@@ -91,3 +91,14 @@ let newStudents = [
 
 let allStudents = students.concat(newStudents);
 console.log("Merged Students:", allStudents);
+
+let highestStudent = students.reduce(function(highest, student) {
+    return student.marks > highest.marks ? student : highest;
+});
+
+let lowestStudent = students.reduce(function(lowest, student) {
+    return student.marks < lowest.marks ? student : lowest;
+});
+
+console.log("Highest Marks:", highestStudent);
+console.log("Lowest Marks:", lowestStudent);
