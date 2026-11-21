@@ -3,6 +3,8 @@ import heroImg from './assets/hero.png'
 import javascriptLogo from './assets/javascript.svg'
 import viteLogo from './assets/vite.svg'
 import { setupCounter } from './counter.js'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap/dist/js/bootstrap.bundle.min.js'
 
 document.querySelector('#app').innerHTML = `
 <section id="center">
