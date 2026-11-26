@@ -61,3 +61,38 @@ function orderSummary(orders) {
 }
 
 console.log("Order Summary:", orderSummary(orders));
+
+let student = {
+    name: "Ali",
+    age: 22
+};
+
+Object.freeze(student);
+
+student.age = 25;
+student.city = "Karachi";
+delete student.name;
+
+console.log(student);
+
+let employee = {
+    name: "Sara",
+    salary: 50000
+};
+
+Object.seal(employee);
+employee.salary = 60000;
+employee.city = "Karachi";
+delete employee.name;
+
+console.log(employee);
+
+let car = {
+    brand: "Toyota",
+    color: "White",
+    model: 2024
+};
+
+console.log(Object.hasOwn(car, "brand"));
+console.log(Object.hasOwn(car, "price"));
+console.log(Object.hasOwn(car, "color"));
